@@ -13,4 +13,11 @@
         <command>instruments -s devices</command>
         <regex>QA.*?\[([a-f0-9]+)\]</regex>
     </parameter>
+    <parameter>
+        <tool>Heroku</tool>
+	    <file></file>
+	    <location></location>
+        <command>heroku --version</command>
+        <regex>heroku-toolbelt.([0-9]+.[0-9]+.[0-9]+)</regex>
+    </parameter>
 </parameterList>
