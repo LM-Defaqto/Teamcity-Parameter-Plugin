@@ -8,7 +8,6 @@ import jetbrains.buildServer.log.Loggers;
 import jetbrains.buildServer.util.EventDispatcher;
 import org.jetbrains.annotations.NotNull;
 import org.w3c.dom.*;
-import org.w3c.dom.html.HTMLCollection;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -63,7 +62,9 @@ public class AppAgent extends AgentLifeCycleAdapter {
                             location = location.replaceAll("[/\\\\]+", Matcher.quoteReplacement(System.getProperty("file.separator")));
                         locations.add(location);
                     }
-                    String file = (eElement.getElementsByTagName("file").item(0).getTextContent());
+			        NodeList files = eElement.getElementsByTagName("file");
+                    Node fileNode = files == null ? null : files.item(0);
+                    String file = fileNode == null ? null : fileNode.getTextContent();
                     String command = (eElement.getElementsByTagName("command").item(0).getTextContent());
                     String regex = (eElement.getElementsByTagName("regex").item(0).getTextContent());
 
