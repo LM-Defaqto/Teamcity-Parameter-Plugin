@@ -29,7 +29,7 @@ public class ParameterFinder {
         this.a.buildLogString("\n\t\tTOOL: " + tool + "\n");
 
         for (String location : this.locations) {
-            if (location == null || location.compareTo("null") == 0) {
+            if (location == null || location.compareTo("null") == 0||"".equals(location)) {
                 if (runCommand(null, this.command, regex)) {
                     break;
                 }
@@ -125,7 +125,7 @@ public class ParameterFinder {
         Matcher m = p.matcher(output.toString());
         if (m.find()) {
             a.buildLogString("\t\tVersion: " + m.group(1) + "\n");
-            a.values.put(tool + m.group(1), m.group(1));
+            a.values.put(tool, m.group(1));
             if (fileFound.length() > 1)
                 a.values.put(tool + m.group(1) + "_Path", fileFound);
             return true;
