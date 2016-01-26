@@ -25,6 +25,6 @@
 	    <file></file>
 	    <location></location>
         <command>docker version</command>
-        <regex>Version:\s*(.*)\s*</regex>
+        <regex>Version:\s*(\S+)\s*</regex>
     </parameter>
 </parameterList>
