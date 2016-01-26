@@ -20,4 +20,11 @@
         <command>heroku --version</command>
         <regex>heroku-toolbelt.([0-9]+.[0-9]+.[0-9]+)</regex>
     </parameter>
+    <parameter>
+        <tool>Docker</tool>
+	    <file></file>
+	    <location></location>
+        <command>docker version</command>
+        <regex>Version:\s*(.*?)\s*</regex>
+    </parameter>
 </parameterList>
