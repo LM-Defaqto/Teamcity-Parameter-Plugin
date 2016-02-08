@@ -32,34 +32,34 @@
 	    <file></file>
 	    <location></location>
         <command>adb shell getprop ro.serialno</command>
-        <regex>^(.*)$</regex>
+        <regex>(.*)$</regex>
     </parameter>
     <parameter>
         <tool>ANDROID_BRAND</tool>
 	    <file></file>
 	    <location></location>
         <command>adb shell getprop ro.product.model</command>
-        <regex>^(.*)$</regex>
+        <regex>(.*)$</regex>
     </parameter>
     <parameter>
         <tool>ANDROID_API_LEVEL</tool>
 	    <file></file>
 	    <location></location>
         <command>adb shell getprop ro.build.version.sdk</command>
-        <regex>^(.*)$</regex>
+        <regex>(.*)$</regex>
     </parameter>
     <parameter>
         <tool>ANDROID_VERSION</tool>
 	    <file></file>
 	    <location></location>
         <command>adb shell getprop ro.build.version.release</command>
-        <regex>^(.*)$</regex>
+        <regex>(.*)$</regex>
     </parameter>
     <parameter>
         <tool>ANDROID_MANUFACTURER</tool>
 	    <file></file>
 	    <location></location>
         <command>adb shell getprop ro.product.manufacturer</command>
-        <regex>^(.*)$</regex>
+        <regex>(.*)$</regex>
     </parameter>
 </parameterList>
