@@ -62,4 +62,11 @@
         <command>adb shell getprop ro.product.manufacturer</command>
         <regex>(.*[^*\s])$</regex>
     </parameter>
+    <parameter>
+        <tool>MYSQL</tool>
+	    <file></file>
+	    <location></location>
+        <command>mysql --version</command>
+        <regex>(\d+\.\d+(\.\d+)?),</regex>
+    </parameter>
 </parameterList>
