@@ -32,7 +32,7 @@
 	    <file></file>
 	    <location></location>
         <command>adb shell getprop ro.serialno</command>
-        <regex>[^*]+$</regex>
+        <regex>([^*]+)$</regex>
     </parameter>
     <parameter>
         <tool>ANDROID_BRAND</tool>
