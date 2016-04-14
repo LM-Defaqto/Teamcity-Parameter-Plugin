@@ -62,4 +62,11 @@
         <command>adb shell getprop ro.product.manufacturer</command>
         <regex>(.*[^*\s])$</regex>
     </parameter>
+    <parameter>
+        <tool>POSTGRESQL_VERSION</tool>
+        <file></file>
+        <location></location>
+        <command>psql -V</command>
+        <regex>psql\s*\(PostgreSQL\)\s*([0-9]+.[0-9]+.[0-9]+)</regex>
+    </parameter>
 </parameterList>
