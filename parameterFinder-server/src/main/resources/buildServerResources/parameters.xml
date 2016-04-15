@@ -69,4 +69,11 @@
         <command>psql -V</command>
         <regex>psql\s*\(PostgreSQL\)\s*([0-9]+.[0-9]+.[0-9]+)</regex>
     </parameter>
+    <parameter> 
+        <tool>UNITY_VERSION</tool> 
+        <file></file> 
+        <location></location> 
+        <command>defaults read /Applications/Unity/Unity.app/Contents/Info.plist CFBundleShortVersionString</command> 
+        <regex>Unity version (\S*)</regex>
+    </parameter>
 </parameterList>
