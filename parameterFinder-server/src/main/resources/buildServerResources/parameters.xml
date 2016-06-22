@@ -95,6 +95,6 @@
         <file></file> 
         <location></location> 
         <command>tshark -v</command> 
-        <regex>TShark \(Wireshark\)\s+*\d+</regex>
+        <regex>TShark \(Wireshark\)\s+*(\d+\.\d+(\.\d+)?)</regex>
     </parameter>
 </parameterList>
