@@ -83,4 +83,11 @@
         <command>defaults read /Applications/Unity/Unity.app/Contents/Info.plist CFBundleShortVersionString</command> 
         <regex>Unity version (\S*)</regex>
     </parameter>
+    <parameter>
+        <tool>MYSQL</tool>
+	    <file></file>
+	    <location></location>
+        <command>mysql --version</command>
+        <regex>(\d+\.\d+(\.\d+)?),</regex>
+    </parameter>
 </parameterList>
