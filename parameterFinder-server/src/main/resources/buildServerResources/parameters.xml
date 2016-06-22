@@ -90,4 +90,11 @@
         <command>mysql --version</command>
         <regex>(\d+\.\d+(\.\d+)?),</regex>
     </parameter>
+    <parameter> 
+        <tool>TSHARK</tool> 
+        <file></file> 
+        <location></location> 
+        <command>tshark -v</command> 
+        <regex>TShark \(Wireshark\)\s+*\d+</regex>
+    </parameter>
 </parameterList>
