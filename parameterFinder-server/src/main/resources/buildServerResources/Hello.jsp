@@ -3,40 +3,43 @@
         <script language="JavaScript">
             window.onload = loadParameters;
 
-            function loadParameters()
-            {
-                var xmlDoc=loadXMLDoc("/plugins/parameterFinder/parameters.xml");
-                var x = xmlDoc.getElementsByTagName("parameter");
+            function loadParameters () {
+                var xmlDoc = loadXMLDoc( "/plugins/parameterFinder/parameters.xml" );
+                var parameterTags = xmlDoc.getElementsByTagName( "parameter" );
 
-                for (i=0;i<x.length;i++) {
-                    document.getElementById('params').innerHTML += "Tool: "+x[i].getElementsByTagName("tool")[0].childNodes[0].nodeValue;
-                    document.getElementById('params').innerHTML += "<br>";
-                    document.getElementById('params').innerHTML += "Path: "+x[i].getElementsByTagName("location")[0].childNodes[0].nodeValue;
-                    document.getElementById('params').innerHTML += "<br>";
-                    document.getElementById('params').innerHTML += "File: "+x[i].getElementsByTagName("file")[0].childNodes[0].nodeValue;
-                    document.getElementById('params').innerHTML += "<br>";
-                    document.getElementById('params').innerHTML += "Command: "+x[i].getElementsByTagName("command")[0].childNodes[0].nodeValue;
-                    document.getElementById('params').innerHTML += "<br>";
-                    document.getElementById('params').innerHTML += "Regex: "+x[i].getElementsByTagName("regex")[0].childNodes[0].nodeValue;
-                    document.getElementById('params').innerHTML += "<br><br>";
+                for ( var index = 0; index < parameterTags.length; index++ ) {
+                    [ 'Tool', 'Location', 'File', 'Command', 'Regex' ].each( function ( label ) {
+                        document.getElementById( 'params' ).innerHTML += label + ": " + tagValue( parameterTags[ index ], label.toLowerCase() ) + "<br/>";
+                    } );
+                    document.getElementById( 'params' ).innerHTML += "<br/>";
                 }
             }
 
-            function loadXMLDoc(filename)
-            {
-                if (window.XMLHttpRequest)
-                {
-                    xhttp=new XMLHttpRequest();
+            function tagValue ( node, tagName ) {
+                var returnValue = "";
+                var elements = node.getElementsByTagName( tagName );
+                if ( elements.length > 0 ) {
+                    var firstElement = elements[ 0 ];
+                    if ( typeof firstElement === 'object' ) {
+                        var childNodes = firstElement.childNodes;
+                        if ( childNodes.length > 0 ) {
+                            var firstChildNode = childNodes[ 0 ];
+                            if ( typeof firstChildNode === 'object' ) {
+                                returnValue = firstChildNode.nodeValue
+                            }
+                        }
+                    }
+
                 }
-                else // code for IE5 and IE6
-                {
-                    xhttp=new ActiveXObject("Microsoft.XMLHTTP");
-                }
-                xhttp.open("GET",filename,false);
+                return returnValue;
+            }
+
+            function loadXMLDoc ( filename ) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open( "GET", filename, false );
                 xhttp.send();
                 return xhttp.responseXML;
             }
-
         </script>
     </head>
     <body>
