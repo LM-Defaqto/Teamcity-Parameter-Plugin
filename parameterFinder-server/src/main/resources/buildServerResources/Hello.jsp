@@ -3,7 +3,7 @@
         <script>
             window.addEventListener('load', function () {
                 var xhr = new XMLHttpRequest();
-                xhr.open('GET', '/parameters.xml');
+                xhr.open('GET', '/plugins/parameterFinder/parameters.xml');
                 xhr.addEventListener('load', function () {
 
                     // Iterate over parameter elements
