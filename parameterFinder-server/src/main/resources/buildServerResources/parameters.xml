@@ -21,6 +21,13 @@
         <regex>QA.*?\((\S*)\)</regex>
     </parameter>
     <parameter>
+        <tool>Hardware_iOS_Device_Name</tool>
+        <file></file>
+        <location></location>
+        <command>instruments -s devices</command>
+        <regex>QA.*?(?=[\[])</regex>
+    </parameter>
+    <parameter>
         <tool>Heroku</tool>
 	    <file></file>
 	    <location></location>
