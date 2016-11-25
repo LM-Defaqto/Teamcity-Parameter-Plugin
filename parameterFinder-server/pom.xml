@@ -4,7 +4,7 @@
   <parent>
     <artifactId>parameterFinder</artifactId>
     <groupId>com.accusoft.teamcity.parameterFinder</groupId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>parameterFinder-server</artifactId>
   <packaging>jar</packaging>
@@ -13,7 +13,7 @@
     <dependency>
       <groupId>com.accusoft.teamcity.parameterFinder</groupId>
       <artifactId>parameterFinder-common</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>1.0.1-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
 
