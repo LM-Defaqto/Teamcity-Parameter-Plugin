@@ -77,4 +77,25 @@
         <command>-i</command>
         <regex>python([\d\.]+)</regex>
     </parameter>
+    <parameter>
+        <tool>nvm</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>--version</command>
+        <regex>([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>node</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>--version</command>
+        <regex>([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>npm</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>--version</command>
+        <regex>([\d\.]+)</regex>
+    </parameter>
 </parameterList>
