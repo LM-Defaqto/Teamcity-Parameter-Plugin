@@ -7,10 +7,24 @@
         <regex>Maven ([\d\.]+)</regex>
     </parameter>
     <parameter>
-        <tool>Python</tool>
-        <file>python.exe</file>
-        <location>C:\Python</location>
-        <command>-V</command>
+        <tool>Default Python</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>python -V</command>
+        <regex>Python ([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Python 2</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>python2 -V</command>
+        <regex>Python ([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Python 3</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>python3 -V</command>
         <regex>Python ([\d\.]+)</regex>
     </parameter>
     <parameter>
@@ -81,21 +95,21 @@
         <tool>nvm</tool>
         <file>null</file>
         <location>null</location>
-        <command>--version</command>
+        <command>nvm version</command>
         <regex>([\d\.]+)</regex>
     </parameter>
     <parameter>
         <tool>node</tool>
         <file>null</file>
         <location>null</location>
-        <command>--version</command>
-        <regex>([\d\.]+)</regex>
+        <command>node --version</command>
+        <regex>v([\d\.]+)</regex>
     </parameter>
     <parameter>
         <tool>npm</tool>
         <file>null</file>
         <location>null</location>
-        <command>--version</command>
+        <command>npm --version</command>
         <regex>([\d\.]+)</regex>
     </parameter>
 </parameterList>
