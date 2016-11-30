@@ -109,7 +109,14 @@
         <tool>npm</tool>
         <file>null</file>
         <location>null</location>
-        <command>npm --version</command>
+        <command>npm.cmd --version</command>
+        <regex>([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Chocolatey</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>choco --version</command>
         <regex>([\d\.]+)</regex>
     </parameter>
     <parameter>
