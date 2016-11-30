@@ -1,5 +1,118 @@
 <parameterList>
     <parameter>
+        <tool>Maven</tool>
+        <file>mvn.cmd</file>
+        <location>C:\Program Files\Maven</location>
+        <command>-version</command>
+        <regex>Maven ([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Default Python</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>python -V</command>
+        <regex>Python ([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Python 2</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>python2 -V</command>
+        <regex>Python ([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Python 3</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>python3 -V</command>
+        <regex>Python ([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Ant</tool>
+        <file>ant.bat</file>
+        <location>C:\Program Files\Ant</location>
+        <command>-version</command>
+        <regex>version ([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Gradle</tool>
+        <file>gradle.bat</file>
+        <location>C:\Program Files(x86)\Gradle</location>
+        <location>C:\Program Files\Gradle</location>
+        <command>-version</command>
+        <regex>Gradle ([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Make</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>make --version</command>
+        <regex>Make ([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>CMake</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>cmake --version</command>
+        <regex>version ([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>GCC</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>gcc --version</command>
+        <regex>([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>AutoMake</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>automake --version</command>
+        <regex>([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>G++</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>g++ --version</command>
+        <regex>([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Android</tool>
+        <file>RELEASE.TXT</file>
+        <location>C:\AndroidSDK</location>
+        <command>null</command>
+        <regex>([a-z\d]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>Python</tool>
+        <file>pyversions.py</file>
+        <location>/usr/share/python</location>
+        <command>-i</command>
+        <regex>python([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>nvm</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>nvm version</command>
+        <regex>([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>node</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>node --version</command>
+        <regex>v([\d\.]+)</regex>
+    </parameter>
+    <parameter>
+        <tool>npm</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>npm --version</command>
+        <regex>([\d\.]+)</regex>
+    </parameter>
+    <parameter>
         <tool>Xcode_Build_CLI</tool>
 	    <file></file>
 	    <location></location>
