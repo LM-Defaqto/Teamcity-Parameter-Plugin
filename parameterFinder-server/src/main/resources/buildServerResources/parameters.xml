@@ -112,4 +112,21 @@
         <command>npm --version</command>
         <regex>([\d\.]+)</regex>
     </parameter>
+	<parameter>
+        <tool>SqlPackage</tool>
+        <file>SqlPackage.exe</file>
+        <location>C:\Program Files\Microsoft SQL Server\140\DAC\bin</location>
+        <location>C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin</location>
+        <location>C:\Program Files\Microsoft SQL Server\120\DAC\bin</location>
+        <location>C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin</location>
+        <command>/?</command>
+        <regex>(20\d{2})</regex>
+    </parameter>
+	<parameter>
+        <tool>PowershellModule_</tool>
+        <file>null</file>
+        <location>null</location>
+        <command>powershell "Get-Module -ListAvailable | ForEach { $_.Name + ' '};Exit"</command>
+        <regex>(SqlServer)</regex>
+    </parameter>
 </parameterList>
