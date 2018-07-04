@@ -4,7 +4,7 @@
   <parent>
     <artifactId>parameterFinder</artifactId>
     <groupId>com.accusoft.teamcity.parameterFinder</groupId>
-    <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2-DEFAQTO</version>
   </parent>
   <artifactId>build</artifactId>
   <packaging>pom</packaging>
@@ -18,17 +18,17 @@
       <dependency>
            <groupId>com.accusoft.teamcity.parameterFinder</groupId>
            <artifactId>parameterFinder-agent</artifactId>
-           <version>1.0.1-SNAPSHOT</version>
+			<version>1.0.2-DEFAQTO</version>
       </dependency>
       <dependency>
            <groupId>com.accusoft.teamcity.parameterFinder</groupId>
            <artifactId>parameterFinder-common</artifactId>
-           <version>1.0.1-SNAPSHOT</version>
+			<version>1.0.2-DEFAQTO</version>
       </dependency>
       <dependency>
            <groupId>com.accusoft.teamcity.parameterFinder</groupId>
            <artifactId>parameterFinder-server</artifactId>
-           <version>1.0.1-SNAPSHOT</version>
+			<version>1.0.2-DEFAQTO</version>
       </dependency>
   </dependencies>
   <build>

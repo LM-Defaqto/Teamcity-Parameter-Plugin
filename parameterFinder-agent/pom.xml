@@ -4,7 +4,7 @@
   <parent>
     <artifactId>parameterFinder</artifactId>
     <groupId>com.accusoft.teamcity.parameterFinder</groupId>
-    <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2-DEFAQTO</version>
   </parent>
   <artifactId>parameterFinder-agent</artifactId>
   <packaging>jar</packaging>

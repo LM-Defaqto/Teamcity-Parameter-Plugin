@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.accusoft.teamcity.parameterFinder</groupId>
   <artifactId>parameterFinder</artifactId>
-  <version>1.0.1-DEFAQTO</version>
+  <version>1.0.2-DEFAQTO</version>
   <packaging>pom</packaging>
   <properties>
       <teamcity-version>10.0.3</teamcity-version>
